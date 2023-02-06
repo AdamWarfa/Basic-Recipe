@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fffbf5;
+  width: 100%;
+}
+main {
+  display: grid;
+  width: 100%;
+  float: left;
+}
+.ingredients {
+  background-color: #c3acd0;
+  grid-column: 1;
+}
+
+.tutorial {
+  background-color: #674188;
+  color: #fffbf5;
+  grid-column: 2;
+  padding: 10%;
+  width: 100%;
+}
+a {
+  color: #fffbf5;
+}
+footer {
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .left,
+  .main,
+  .right {
+    width: 100%;
+  }
+}
