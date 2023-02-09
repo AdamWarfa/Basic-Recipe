@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
@@ -6,8 +10,11 @@ body {
   border: 0;
   padding: 0;
 }
-img {
+main img {
   width: 600px;
+}
+h1 {
+  color: #fffbf5;
 }
 
 main {
@@ -18,18 +25,55 @@ main {
 
 header {
   grid-area: header;
+  background-color: #674188;
+  position: ;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  background: rgb(137, 88, 179);
+  background: linear-gradient(
+    93deg,
+    rgba(137, 88, 179, 1) 0%,
+    rgba(103, 65, 136, 1) 94%
+  );
+}
+
+.vector img {
+  width: 600px;
+  margin-left: 35vh;
+  margin-top: 25vh;
+}
+
+.vector {
+  /* background-color: #674188; */
+}
+
+.welcome {
+  font-size: 148px;
+  /* background-color: #674188; */
+}
+
+.welcome h2 {
+  color: #fffbf5;
+  font-family: "Caveat", cursive;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.46);
+  margin-top: 20vh;
+  margin-left: 10vh;
 }
 
 .ingredients {
   grid-area: ingr;
   padding-left: 5em;
-  background-color: #c3acd0;
+  background-color: #f7efe5;
   /* grid-column: 1; */
 }
 
 .tutorial {
   grid-area: tuto;
-  background-color: #674188;
+  background-color: #c3acd0;
   color: #fffbf5;
   /* grid-column: 2; */
   padding-left: 5em;
@@ -41,9 +85,28 @@ footer {
   grid-area: footer;
   width: 100%;
 }
-button {
-  color: #f7efe5;
+.buttonContainer {
+  margin-left: 20vh;
+  margin-top: -20vh;
 }
+
+.introButton {
+  left: 12220vh;
+  font-family: helvetica;
+  color: #674188 !important;
+  font-size: 30px;
+  text-shadow: 1px 1px 0px #674188;
+  box-shadow: 0px 0px 0px #f9f9f9;
+  padding: 22px 18px;
+  border-radius: 40px;
+  border: 3px solid #674188;
+  background: #f7efe5;
+}
+.introButton:hover {
+  color: C3ACD0 !important;
+  background: #fffbf5;
+}
+
 @media screen and (max-width: 800px) {
   .left,
   .main,
