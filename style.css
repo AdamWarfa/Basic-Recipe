@@ -77,7 +77,7 @@ header {
 
 .welcome h2 {
   color: #fffbf5;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Caveat", cursive;
   text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.46);
 }
 
@@ -173,13 +173,13 @@ a {
   }
 
   .welcome {
-    font-size: 9vw;
+    font-size: 12vw;
     /* background-color: #674188; */
   }
 
   .welcome h2 {
     color: #fffbf5;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Caveat", cursive;
     text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.46);
     margin-top: -20vh;
     margin-left: 8vh;
@@ -209,8 +209,6 @@ a {
     grid-template-areas: "header" "header" "ingr" "tuto";
     grid-template-rows: 1fr 1fr 20fr 20 fr;
     grid-template-columns: 100vw;
-
-    width: 100vw;
   }
 
   main img {
