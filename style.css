@@ -23,10 +23,15 @@ main {
   grid-template-rows: 1fr 20fr 1fr;
 }
 
+main li {
+  font-size: 20px;
+  list-style-type: none;
+}
+
 header {
   grid-area: header;
   background-color: #674188;
-  position: ;
+  text-align: center;
 }
 
 .intro {
@@ -42,9 +47,9 @@ header {
 }
 
 .vector img {
-  width: 600px;
-  margin-left: 35vh;
-  margin-top: 25vh;
+  width: 800px;
+  margin-left: 25vh;
+  margin-top: 20vh;
 }
 
 .vector {
