@@ -27,8 +27,9 @@ main {
   display: grid;
   grid-template-areas: "header header" "ingr tuto";
   grid-template-rows: 1fr 20fr;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   max-width: 100vw;
+  max-height: 1300px;
 }
 
 main img {
@@ -49,6 +50,7 @@ header {
 
 .intro {
   display: grid;
+  margin-right: -5em;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
   max-width: 100vw;
@@ -66,10 +68,6 @@ header {
   margin-top: 20vh;
 }
 
-.vector {
-  /* background-color: #674188; */
-}
-
 .welcome {
   font-size: 6vw;
   /* background-color: #674188; */
@@ -82,19 +80,23 @@ header {
 }
 
 .ingredients {
+  margin: 0;
   grid-area: ingr;
   padding-top: 3em;
   padding-right: 5em;
   padding-left: 5em;
   background-color: #f7efe5;
-
+  max-height: 68em;
   /* grid-column: 1; */
 }
 
 .tutorial {
+  margin: 0;
   grid-area: tuto;
   background-color: #c3acd0;
   color: #fffbf5;
+  max-height: 68em;
+  padding-bottom: 3em;
   /* grid-column: 2; */
 }
 a {
@@ -140,10 +142,12 @@ a {
   width: 50vw;
 }
 .left {
+  margin: 0;
   background-color: #f7efe5;
 }
 
 .right {
+  margin: 0;
   background-color: #c3acd0;
   width: auto;
   padding-top: 3em;
@@ -152,7 +156,7 @@ a {
   color: #fffbf5;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
   .intro {
     display: grid;
     grid-template-columns: 1fr;
@@ -240,5 +244,21 @@ a {
   }
   .secondGrid img {
     width: 100vw;
+  }
+}
+
+@media screen and (min-width: 1773px) {
+  main {
+    display: grid;
+    grid-template-areas: "header header" "ingr tuto";
+    grid-template-rows: 1fr 20fr;
+    grid-template-columns: 1fr 1fr;
+    max-width: 100vw;
+  }
+  .tutorial {
+    min-height: 100em;
+  }
+  .ingredients {
+    min-height: 100em;
   }
 }
